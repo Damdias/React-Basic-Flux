@@ -8,9 +8,6 @@ class App extends React.Component{
     constructor(props){
      super(props);
      BankActions.createAccount();
-        this.state = {
-            balance:BankBalanceStore.getState()
-        };
         this.deposit = this.deposit.bind(this);
         this.withdraw  = this.withdraw.bind(this);
     }
